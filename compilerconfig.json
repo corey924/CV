@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "css/all.css",
+    "inputFile": "css/all.scss"
+  },
+  {
+    "outputFile": "js/freelancer.min.es5.js",
+    "inputFile": "js/freelancer.min.js"
+  },
+  {
+    "outputFile": "assets/css/all.css",
+    "inputFile": "assets/css/all.scss"
+  },
+  {
+    "outputFile": "assets/js/freelancer.es5.js",
+    "inputFile": "assets/js/freelancer.js"
+  }
+]
