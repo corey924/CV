@@ -14,5 +14,9 @@
   {
     "outputFile": "assets/js/freelancer.es5.js",
     "inputFile": "assets/js/freelancer.js"
+  },
+  {
+    "outputFile": "assets/css/flowchart.css",
+    "inputFile": "assets/css/flowchart.scss"
   }
 ]

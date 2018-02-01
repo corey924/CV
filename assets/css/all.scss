@@ -48,6 +48,16 @@ section {
   }
 }
 
+.p-indent {
+  text-indent: 2em;
+}
+
+#about {
+  p {
+    text-indent: 2em;
+  }
+}
+
 .img-circle {
   display: inline-block;
   width: 200px;
@@ -58,6 +68,11 @@ section {
   background: #fff;
   filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
   margin-bottom: 10px;
+}
+
+.img-radius {
+  margin: 5px auto;
+  border-radius: 10px;
 }
 
 @media (min-width: 992px) {
