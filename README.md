@@ -11,10 +11,10 @@ Resume
 
 ## Library
 
-* Bootstrap 4.0
-* jQuery 3.3.1
-* Font Awesome 5.0.6
-* Vue.js 2.5.13
+* Bootstrap 4.4.1
+* jQuery 3.4.1
+* Font Awesome 5.12.0
+* Vue.js 2.6.11
 
 
 ## 設計引用
