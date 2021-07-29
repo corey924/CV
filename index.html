@@ -6,35 +6,29 @@
   <meta name="description" content="Corey's resume from Taiwan." />
   <title>柯榮彥 - 個人簡歷</title>
   <link rel="Shortcut Icon" type="image/x-icon" href="assets/img/icon.ico" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
   <link rel="stylesheet" href="assets/css/all.min.css" />
 </head>
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Resume</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        MENU
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="#page-top">Resume</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experience">Experience</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+            </ul>
+        </div>
     </div>
   </nav>
   <header class="masthead bg-primary text-white">
-    <div class="container">
+    <div class="container d-flex flex-column">
       <div class="row">
         <div class="col-md-4 text-center">
           <img class="img-circle" src="assets/img/profile.jpg" alt="Corey">
@@ -50,7 +44,6 @@
       </div>
     </div>
   </header>
-
   <section class="portfolio" id="experience">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Experience</h2>
@@ -70,62 +63,64 @@
         <div class="col-md-11 offset-md-1">
           <div class="row" style="margin-top:5%">
             <div class="col text-center">
-              <button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                點此查看更多本職務專案經歷...
-              </button>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdvmeds" aria-expanded="false" aria-controls="collapseExample">
+                  點此查看更多本職務專案經歷...
+                </button>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="collapseAdvmeds">
                 <div class="card-body">
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">15. 跨組協助重構 HIS 醫院資訊系統</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">因有協助重構「血液透析系統」的先例，協助多年前難以維護的醫院資訊系統重構作業。主要提供技術協助，由組員合力開發。</p>
-                      <footer class="blockquote-footer text-white text-right">2021.03 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2021.03 - </footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">14. 整構公司內部資訊系統</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">因開發人員擴編、前朝人員離職後許多基礎系統失修，充當業餘 DevOps 工程師回頭處理基礎資訊建設，主要著手於重新規劃開發、測試、部署流程，更換自動部署與備份工具，並擴增、更新文件。漸進優化組員的開發流程。</p>
-                      <footer class="blockquote-footer text-white text-right">2020.10 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2020.10 - </footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">13. 提供技術協助，與組員重構多年無法有效維護的「血液透析系統」</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">為重啟公司多年前難以維護的血液透析專案，發起重構該系統的計畫，在其中主要提供技術協助和需求溝通，由組員合力開發。現已在實際場域試煉中。</p>
-                      <footer class="blockquote-footer text-white text-right">2020.07 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2020.07 - </footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">12. 開發「兒童早期療育中心」所需的資料後台</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">以 .NET Core 3.1 WebAPI + Vue.js 前後端分離的架構基礎，為解決兒童早療院所長期累積大量紙本資料難以分析的問題，協助電子化資料彙整、個案追蹤的後台網站，</p>
-                      <footer class="blockquote-footer text-white text-right">2020.05 - 2020.07</footer>
+                      <footer class="blockquote-footer text-white text-end">2020.05 - 2020.07</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">11. 開發針對 COVID-19 疫情的「體溫管理造冊系統」 <span class="badge badge-warning">重點職務</span></h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">以 .NET Core 3.1 MVC 為架構基礎，透過 APP 串接體溫量測硬體，回傳雲端即時顯示體溫儀表板，並開發線上實聯制健康聲明問卷、串接健保署特定地區旅遊及接觸史查詢、訪客通行證的進出管制與人員造冊系統。提供給醫療院所、企業、校園等機關可快速識別人員和追蹤量測後動向的一套資訊服務。持續開發新功能並維護至今。</p>
-                      <footer class="blockquote-footer text-white text-right">2020.02 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2020.02 - </footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">10. 開發「藥愛療癒復元中心」的資料後台</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">以 .NET Core 2.2 MVC 為架構基礎，為病毒/性病篩檢的服務機關設計一套符合他們需求的後台網站。</p>
-                      <footer class="blockquote-footer text-white text-right">2019.08 - 2019.11</footer>
+                      <footer class="blockquote-footer text-white text-end">2019.08 - 2019.11</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">9. 升任「雲端照護組」組長 <span class="badge badge-warning">重點職務</span></h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">受惠於公司給予的機會，接掌負責照護產品後端開發的組長；除程式開發外兼任管理職，妥善處理專案發展、溝通、任務分配等管理工作。</p>
-                      <footer class="blockquote-footer text-white text-right">2019.08 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2019.08 - </footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
@@ -168,14 +163,14 @@
                     <h5 class="card-header">2. 參與政府的長照計畫系統開發</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">配合智慧城市「雄健康」照護計畫，參與各種討論與開發相關細節。</p>
-                      <footer class="blockquote-footer text-white text-right">2018.07 - 2020.08</footer>
+                      <footer class="blockquote-footer text-white text-end">2018.07 - 2020.08</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">1. 開發智慧照護站網站後台 <span class="badge badge-warning">重點職務</span></h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">針對各個醫療、社區、商業場域，設計各種客製化設定與功能。持續開發新功能並維護至今。</p>
-                      <footer class="blockquote-footer text-white text-right">2018.07 - </footer>
+                      <footer class="blockquote-footer text-white text-end">2018.07 - </footer>
                     </div>
                   </div>
                 </div>
@@ -203,111 +198,113 @@
         <div class="col-md-11 offset-md-1">
           <div class="row" style="margin-top:5%">
             <div class="col text-center">
-              <button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                點此查看更多本職務專案經歷...
-              </button>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobilogics" aria-expanded="false" aria-controls="collapseExample">
+                  點此查看更多本職務專案經歷...
+                </button>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="collapseMobilogics">
                 <div class="card-body">
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">14. 導入自定義電子發票系統</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">為改善公司理貨與財務流程，與財政部申請導入電子發票作業。因不是透過第三方系統協助導入，從發票列印設計到資料交換作業，全權由我方設計開發。 過程體驗到與公家單位溝通的各種奇妙冒險（？），電子發票系統最後整理納入進自動化商務列印流程內。</p>
-                      <footer class="blockquote-footer text-white text-right">2017.12 - 2018.01</footer>
+                      <footer class="blockquote-footer text-white text-end">2017.12 - 2018.01</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">13. 以 MVC API + Vue.js 開發全新購物網站</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">因公司計畫開發新的購物平台，經討論後決定以 Vue.js 作為前端開發基礎框架，後端使用 ASP.NET MVC API 開發。 這是在正式專案上，前端首次全面使用 Vue.js 開發的專案。 加上這次專案時間比較充足，在安全性上也下了不少功夫。舉例 Action 透過 ValidateAntiForgeryToken，搭配 RazorHtml.AntiForgeryToken 來強化資料交換安全性等等。</p>
-                      <footer class="blockquote-footer text-white text-right">2017.09 - 2017.11</footer>
+                      <footer class="blockquote-footer text-white text-end">2017.09 - 2017.11</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">12. 自動化商務列印流程（與黑貓宅急便接配號API）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">在原先的自動列印系統內，導入黑貓宅急便的新版API配號系統，同時可直接與黑貓系統對接帳務資訊，可省去不少人工對號、對帳的時間。</p>
-                      <footer class="blockquote-footer text-white text-right">2017.06 - 2017.07</footer>
+                      <footer class="blockquote-footer text-white text-end">2017.06 - 2017.07</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">11. 自動化商務列印流程（以WPF重構）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">因一年前設計自動化商務列印流程時，初期規劃不善，導致程式碼維護不易，並且留下很多前人（實習生）的技術債在裡面。 所以決定要以 WPF 的架構重新撰寫，列印版型則改用 Report Viewer 重刻，並且將後來學來的UI設計概念融入設計新的介面；不僅後續維護變得容易許多，使用者對於新介面也很滿意。</p>
-                      <footer class="blockquote-footer text-white text-right">2017.02 - 2017.05</footer>
+                      <footer class="blockquote-footer text-white text-end">2017.02 - 2017.05</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">10. 維修管理系統開發</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">公司新的業務服務，針對維修店家所做的管理系統。期間歷經許多客戶探訪、重構、調整；雖然最後演變成交給我獨立重新開發，但是過程中學了很多。 後端也是全部使用 ASP.NET MVC 架構設計，並使用 Microsoft Azure 作為雲端平台。前端使用 Bootstrap 和少許 Vue.js 設計。此後也一直維護系統的功能至今。</p>
-                      <footer class="blockquote-footer text-white text-right">2016.07 - 2016.12</footer>
+                      <footer class="blockquote-footer text-white text-end">2016.07 - 2016.12</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">9. 數據報表網站開發</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">結合EIP與SAP上的客戶交易和營收資料，設計便於查看數據的一系列內部報表網站。 並且也是在正式專案上，首次使用 ASP.NET MVC 架構的系統。</p>
-                      <footer class="blockquote-footer text-white text-right">2016.05 - 2016.06</footer>
+                      <footer class="blockquote-footer text-white text-end">2016.05 - 2016.06</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">8. 將EIP資料轉入SAP之自動轉單程序</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">為因應訂單量大增，原本人工逐筆轉入SAP方式花費太多時間，開始研究如何快速大量將EIP資料轉入SAP的方法。 最後採用的是透過將EIP資料整理成XML，再經過 SAP DI Server 的方式，一次整批轉入SAP。 一共開發出針對SAP的銷售訂單、收貨採購單、銷售退貨單，三大系統的自動批次轉入程式。 並且在正式專案上首次嘗試以WPF重新撰寫視窗程式。</p>
-                      <footer class="blockquote-footer text-white text-right">2016.02 - 2016.04</footer>
+                      <footer class="blockquote-footer text-white text-end">2016.02 - 2016.04</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">7. 自動化商務列印流程（託運單據）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">待銷售單據和統一發票自動化流程穩定後，著手開發「針對客戶所選物流公司，分門別類整理歸納，並列印託運單據的半自動程序」。 為何為半自動設計是因為，希望能在確定理完貨且要出貨前，再幫客戶今天所下的商品統計代收貨款，這部分需要人工來決定列印時間。</p>
-                      <footer class="blockquote-footer text-white text-right">2015.09 - 2015.11</footer>
+                      <footer class="blockquote-footer text-white text-end">2015.09 - 2015.11</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">6. 公司形象網站開發（RWD）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">協助公司設計形象網站，與配合的UI設計師合作，首次嘗試完全以RWD自適應概念去建構網站前端程式。</p>
-                      <footer class="blockquote-footer text-white text-right">2015.08 - 2015.08</footer>
+                      <footer class="blockquote-footer text-white text-end">2015.08 - 2015.08</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">5. 自動化商務列印流程（統一發票）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">待銷售單據自動化流程穩定後，開始開發「自動將在SAP成立訂單的客戶，歸納今日出貨的發票內容列印；並以會計事務所之規定設計發票內容與品名的自動化程序」。</p>
-                      <footer class="blockquote-footer text-white text-right">2015.05 - 2015.07</footer>
+                      <footer class="blockquote-footer text-white text-end">2015.05 - 2015.07</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">4. 自動化商務列印流程（銷售單據）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">待SAP與EIP系統狀況穩定後，開始規劃自動化商務流程。 首先第一個要開發的專案是「在SAP成立訂單時，自動列印銷售三聯單，並且在EIP可以查詢並管理流程的自動化程序」。</p>
-                      <footer class="blockquote-footer text-white text-right">2015.02 - 2015.04</footer>
+                      <footer class="blockquote-footer text-white text-end">2015.02 - 2015.04</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">3. SAP Business One 9.0 導入作業</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">協助公司導入新版 SAP 9.0 ，開發許多能從舊版SAP抽取資料備份，並能重新編製給新版SAP導入的程式。 導入前一個月，每天都在測試程式和演練新SAP的開帳導入，確保能在元旦假期內完成全部導入工作。</p>
-                      <footer class="blockquote-footer text-white text-right">2014.10 - 2015.01</footer>
+                      <footer class="blockquote-footer text-white text-end">2014.10 - 2015.01</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">2. 重新設計公司的企業入口網站（EIP）</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">依循先前考察的系統使用流程，設計新企業入口網站的流程、功能和資料庫規劃；歸納出需重新設計的50個重點功能，共需建置約200個以上網頁內容。預計年底與新版SAP介接。 此後一直維護EIP的功能至今，如今已有一百多個重要功能和500多個頁面。</p>
-                      <footer class="blockquote-footer text-white text-right">2014.06 - 2014.12</footer>
+                      <footer class="blockquote-footer text-white text-end">2014.06 - 2014.12</footer>
                     </div>
                   </div>
                   <div class="card text-white bg-primary mb-3">
                     <h5 class="card-header">1. 公司資訊系統考察與系統文件撰寫</h5>
                     <div class="card-body">
                       <p class="p-indent text-justify">探訪公司兩岸各部門，實地訪談記錄目前現行系統的使用流程與狀況，並且撰寫各部門的資訊系統使用文件。 主要作為公司未來系統重製和流程改進方向的考據。</p>
-                      <footer class="blockquote-footer text-white text-right">2014.03 - 2014.05</footer>
+                      <footer class="blockquote-footer text-white text-end">2014.03 - 2014.05</footer>
                     </div>
                   </div>
                 </div>
@@ -373,7 +370,7 @@
       </dl>
       <dl class="row">
         <dt class="col-sm-3">伺服器環境</dt>
-        <dd class="col-sm-9">Windows Server 2016、Windows Server 2019、MS SQL、IIS</dd>
+        <dd class="col-sm-9">Windows Server 2016、Windows Server 2019、MS-SQL、IIS</dd>
       </dl>
       <dl class="row">
         <dt class="col-sm-3">程式開發工具</dt>
@@ -430,7 +427,7 @@
         </div>
         <div class="col-sm-10 text-justify">
           <p>
-            工作上的專長是以 .NET Framework C# 相關技術為主，近年對於 .NET Core 頗感興趣，有些小型 Project 都改用其框架開發；網頁部分從基本的 WebForm、MVC、WebAPI 到 SPA 都有玩過，視窗程式則是因設計過自動化商務環境，而有寫 WinForm 的經驗，之後專案都已更新為 WPF 來設計；也因此有寫過不少配合 SAP 的外部應用程式。
+            工作上的專長是以 .NET C# 相關技術為主，近年開始採用 .NET Core 做為主力開發框架，3.1 LTS 發佈後也在新的產品上用其框架開發，在其他 Side project 上則開始玩 .NET 5 準備 .NET 6 LTS 的發佈，提前體驗踩雷；網頁部分從早期的 WebForm、MVC、WebAPI 到 SPA 都有玩過，視窗程式則是因設計過自動化商務環境，而有寫 WinForm 的經驗，之後專案都已更新為 WPF 來設計；也因此有寫過不少配合 SAP 的外部應用程式。
           </p>
         </div>
       </div>
@@ -477,20 +474,18 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#autobiography">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#autobiography">
             閱讀完整自傳
           </button>
         </div>
       </div>
     </div>
     <div class="modal fade" id="autobiography" tabindex="-1" role="dialog" aria-labelledby="autobiographyTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="autobiographyTitle">我自身的期許與經歷</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body text-justify">
             <p>出社會工作也快五年了；看了看五年前自己寫的自傳後，決定用另外一種方式來詮釋自己。</p>
@@ -504,7 +499,7 @@
             <br />
             <p>大學畢業後，很幸運地，在高雄有間小型企業把我找了進去，主管的耐心和同事的指導下，從簡單的網頁程式到整個公司的後台系統重建，都漸漸玩出心得。</p>
             <p>雖然在這過程公司重組轉型了數次，同事們來來去去，但因這些合作的機緣和他們成為了朋友，即使不在同個工作崗位也一直保持著聯繫。</p>
-            <p>而我也為了要跟上資訊圈子的變化，在前同事的推薦下，開始接觸一些資訊社群的活動，其中 <a href="http://gdgk.ga/" target="_blank">GDGK</a>、<a href="https://zh-tw.facebook.com/groups/358503154261390/" target="_blank">高雄前端社群</a>、<a href="http://knet.io/" target="_blank">K.NET</a>、<a href="https://zh-tw.facebook.com/groups/KSDGroup/" target="_blank">KSDG</a> 都是我常去參加的社群；將社群學到的技術經驗收納回公司的專案產品裡，再以此優化自己專案幫助使用者，希望讓別人知道，高雄也能產出很好的軟體使用體驗。</p>
+            <p>而我也為了要跟上資訊圈子的變化，在前同事的推薦下，開始接觸一些資訊社群的活動，其中 <a href="http://gdgk.ga/" target="_blank">GDGK</a>、<a href="https://zh-tw.facebook.com/groups/358503154261390/" target="_blank">高雄前端社群</a>、<a href="http://knet.io/" target="_blank">K.NET</a>、<a href="https://zh-tw.facebook.com/groups/KSDGroup/" target="_blank">KSDG</a> 都是我當時常去參加的社群；將社群學到的技術經驗收納回公司的專案產品裡，再以此優化自己專案幫助使用者，希望讓別人知道，高雄也能產出很好的軟體使用體驗。</p>
             <br />
             <br />
             <h4>「說到頭來，工作不就是為了能持續幫助別人嗎？」</h4>
@@ -564,7 +559,7 @@
             <p>謝謝您閱讀到這邊。</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
           </div>
         </div>
       </div>
@@ -575,9 +570,8 @@
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Library</h4>
-          <p class="lead mb-0">Bootstrap 4.4.1</p>
-          <p class="lead mb-0">jQuery 3.4.1</p>
-          <p class="lead mb-0">Font Awesome 5.12.0</p>
+          <p class="lead mb-0">Bootstrap 5.0.2</p>
+          <p class="lead mb-0">Font Awesome 5.15.3</p>
         </div>
         <div class="col-md-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Contact me</h4>
@@ -618,12 +612,9 @@
       <i class="fas fa-chevron-up"></i>
     </a>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-  <script src="assets/js/freelancer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <script src="assets\js\freelancer.js"></script>
 </body>
 </html>

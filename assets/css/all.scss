@@ -328,8 +328,6 @@ header.masthead {
     -moz-transition: top .3s ease,opacity .3s ease;
     -ms-transition: top .3s ease,opacity .3s ease;
     transition: top .3s ease,opacity .3s ease;
-    vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0;
   }
 
@@ -396,8 +394,8 @@ a {
   border-color: #3399CC;
 
   &:active, &:focus, &:hover {
-    background-color: #99CCCC;
-    border-color: #99CCCC;
+    background-color: darken(#3399CC, 10%);
+        border-color: darken(#3399CC, 12%);
   }
 }
 
