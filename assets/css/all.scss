@@ -2,12 +2,30 @@
   font-family: Lato;
 }
 
-body, label, span, button, p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+body,
+label,
+span,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.btn {
   font-weight: 700;
-  font-family: Arial,Microsoft JhengHei,LiHei Pro,WenQuanYi Zen Hei, DFKai-SB, sans-serif;
+  font-family: Arial, Microsoft JhengHei, LiHei Pro, WenQuanYi Zen Hei, DFKai-SB, sans-serif;
 }
 
-p, dl {
+p,
+dl {
   font-size: 1.2rem;
 }
 
@@ -50,9 +68,9 @@ section {
   text-indent: 2em;
 }
 
-.p-list{
+.p-list {
   font-size: 1.2rem;
-  padding-left:2.45rem;
+  padding-left: 2.45rem;
 }
 
 #about {
@@ -132,7 +150,8 @@ section {
         color: #3399CC;
       }
 
-      &:active, &:focus {
+      &:active,
+      &:focus {
         color: #fff;
       }
 
@@ -152,9 +171,9 @@ section {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    -webkit-transition: padding-top .3s,padding-bottom .3s;
-    -moz-transition: padding-top .3s,padding-bottom .3s;
-    transition: padding-top .3s,padding-bottom .3s;
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s;
 
     .navbar-brand {
       font-size: 2rem;
@@ -166,11 +185,13 @@ section {
     .navbar-nav {
       margin-top: 0;
 
-      > li.nav-item > a.nav-link.active {
+      >li.nav-item>a.nav-link.active {
         color: #fff;
         background: #3399CC;
 
-        &:active, &:focus, &:hover {
+        &:active,
+        &:focus,
+        &:hover {
           color: #fff;
           background: #3399CC;
         }
@@ -306,7 +327,8 @@ header.masthead {
   position: relative;
   border-bottom: 1px solid #e9ecef;
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 1.5em;
     position: relative;
     z-index: 1;
@@ -327,10 +349,10 @@ header.masthead {
     top: 2em;
     display: block;
     margin: 0;
-    -webkit-transition: top .3s ease,opacity .3s ease;
-    -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
-    transition: top .3s ease,opacity .3s ease;
+    -webkit-transition: top .3s ease, opacity .3s ease;
+    -moz-transition: top .3s ease, opacity .3s ease;
+    -ms-transition: top .3s ease, opacity .3s ease;
+    transition: top .3s ease, opacity .3s ease;
     opacity: 0;
   }
 
@@ -367,7 +389,9 @@ form .row:first-child .floating-label-form-group {
 a {
   color: #3399CC;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: #99CCCC;
   }
 }
@@ -396,9 +420,11 @@ a {
   background-color: #3399CC;
   border-color: #3399CC;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     background-color: darken(#3399CC, 10%);
-        border-color: darken(#3399CC, 12%);
+    border-color: darken(#3399CC, 12%);
   }
 }
 
@@ -406,10 +432,30 @@ a {
   background-color: #003366;
   border-color: #003366;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     background-color: #1a252f;
     border-color: #1a252f;
   }
+}
+
+.btn-outline-primary{
+  color: #3399CC;
+  border-color: #3399CC;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: #FFF;
+    background-color: darken(#3399CC, 10%);
+    border-color: darken(#3399CC, 12%);
+  }
+}
+
+li > .btn-link{
+  padding: 0;
+  border: 0;
 }
 
 #experience {
@@ -429,7 +475,9 @@ a {
   }
 
   .modal-body {
-    h4, p {
+
+    h4,
+    p {
       text-indent: 2em;
     }
   }
