@@ -124,7 +124,7 @@ section {
   a {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: rgba(33, 37, 41, 0.5);
+    background-color: rgba(0, 51, 102, 0.5);
     line-height: 3.1rem;
   }
 }
@@ -185,7 +185,7 @@ section {
     .navbar-nav {
       margin-top: 0;
 
-      >li.nav-item>a.nav-link.active {
+      > li.nav-item > a.nav-link.active {
         color: #fff;
         background: #3399CC;
 
@@ -263,7 +263,7 @@ header.masthead {
       -moz-transition: all ease .5s;
       transition: all ease .5s;
       opacity: 0;
-      background-color: rgba(24, 188, 156, 0.9);
+      background-color: rgba(0, 51, 102, 0.9);
 
       &:hover {
         opacity: 1;
@@ -416,13 +416,14 @@ a {
   color: #003366 !important;
 }
 
-.btn-primary {
+.btn-primary,
+.btn:first-child:active {
   background-color: #3399CC;
   border-color: #3399CC;
 
-  &:active,
+  &:hover,
   &:focus,
-  &:hover {
+  &:active {
     background-color: darken(#3399CC, 10%);
     border-color: darken(#3399CC, 12%);
   }
@@ -440,7 +441,7 @@ a {
   }
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   color: #3399CC;
   border-color: #3399CC;
 
@@ -448,12 +449,14 @@ a {
   &:focus,
   &:hover {
     color: #FFF;
+    --bs-btn-active-bg: #3399CC;
+    --bs-btn-active-border-color: #3399CC;
     background-color: darken(#3399CC, 10%);
     border-color: darken(#3399CC, 12%);
   }
 }
 
-li > .btn-link{
+li > .btn-link {
   padding: 0;
   border: 0;
 }

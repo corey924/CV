@@ -80,8 +80,7 @@ section h2 {
   border: 1px solid #eee;
   padding: 1px;
   background: #fff;
-  -webkit-filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
-          filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
   margin-bottom: 10px;
 }
 
@@ -117,7 +116,7 @@ section h2 {
 .scroll-to-top a {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: rgba(33, 37, 41, 0.5);
+  background-color: rgba(0, 51, 102, 0.5);
   line-height: 3.1rem;
 }
 
@@ -156,11 +155,13 @@ section h2 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
     font-size: 2rem;
     -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
@@ -225,9 +226,10 @@ header.masthead h2 {
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(0, 51, 102, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -250,6 +252,7 @@ header.masthead h2 {
   margin: 1rem calc(1rem - 8px);
   position: relative;
   z-index: 2;
+  -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
@@ -290,8 +293,7 @@ header.masthead h2 {
   border: none;
   border-radius: 0;
   background: 0 0;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .floating-label-form-group label {
   font-size: 0.85em;
@@ -302,6 +304,8 @@ header.masthead h2 {
   display: block;
   margin: 0;
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  -moz-transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
@@ -361,13 +365,17 @@ a:active, a:focus, a:hover {
   color: #003366 !important;
 }
 
-.btn-primary {
+.btn-primary,
+.btn:first-child:active {
   background-color: #3399CC;
   border-color: #3399CC;
 }
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #297aa3;
-  border-color: #27749b;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.btn:first-child:active:hover,
+.btn:first-child:active:focus,
+.btn:first-child:active:active {
+  background-color: rgb(40.8, 122.4, 163.2);
+  border-color: rgb(38.76, 116.28, 155.04);
 }
 
 .btn-secondary {
@@ -385,8 +393,10 @@ a:active, a:focus, a:hover {
 }
 .btn-outline-primary:active, .btn-outline-primary:focus, .btn-outline-primary:hover {
   color: #FFF;
-  background-color: #297aa3;
-  border-color: #27749b;
+  --bs-btn-active-bg: #3399CC;
+  --bs-btn-active-border-color: #3399CC;
+  background-color: rgb(40.8, 122.4, 163.2);
+  border-color: rgb(38.76, 116.28, 155.04);
 }
 
 li > .btn-link {
@@ -410,4 +420,6 @@ li > .btn-link {
   .modal-body p {
     text-indent: 2em;
   }
-}/*# sourceMappingURL=all.css.map */
+}
+
+/*# sourceMappingURL=all.css.map */
